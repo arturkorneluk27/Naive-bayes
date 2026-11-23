@@ -11,9 +11,3 @@ def build_vocabulary(documents):
     for doc in documents:
         vocab.update(doc)
     return sorted(vocab)
-
-
-
-docs = [tokenize("Click HERE to win!"), tokenize("Win a free dog, click now")]
-print(docs)
-print(build_vocabulary(docs))
